@@ -15,10 +15,10 @@ $query = mysql_query($sql);
 while($row = mysql_fetch_array($query)){
 ?>
   <tr bgcolor="#eff3ff">
-  <td>±êÌâ£º<?=$row[title]?> ÓÃ»§£º<?=$row[user]?></td>
+  <td>æ ‡é¢˜ï¼š <?=$row[title]?>ç”¨æˆ·: <?=$row[user]?></td>
   </tr>
   <tr bgColor="#ffffff">
-  <td>ÄÚÈÝ£º<?=$row[content]?></td>
+  <td>å†…å®¹<?=$row[content]?></td>
   </tr>
 <?
 }

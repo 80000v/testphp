@@ -7,4 +7,4 @@ CREATE TABLE `message` (
   `content` tinytext NOT NULL,
   `lastdate` date NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8(gbk) AUTO_INCREMENT=1 ;

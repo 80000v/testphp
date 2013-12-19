@@ -10,17 +10,17 @@
 	 $sql = "insert into message (id,user,title,content,lastdate) " .
 			"values ('','$_POST[user]','$_POST[title]','$_POST[content]',now())";
 	 mysql_query($sql);
-     echo "发布成功！";
+     echo "鍙戝竷鎴愬姛";
  }
 ?>
 
   <form action="add.php" method="post">
-	用户:<input type="text" name="user" size="40" maxlength="40"/><br/>
-	标题:<input type="text" name="title" size="40" maxlength="40"/><br/>
-	内容: <input type="text" name="content"/><br/>
+	鐢ㄦ埛:<input type="text" name="user" size="40" maxlength="40"/><br/>
+	鏍囬:<input type="text" name="title" size="40" maxlength="40"/><br/>
+	鍐呭: <input type="text" name="content"/><br/>
 
 
-  <input type="submit" name="sbumit" value="发布留言"/>
+  <input type="submit" name="sbumit" value="鎻愪氦"/>
 
 
 
