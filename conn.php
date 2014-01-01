@@ -1,12 +1,24 @@
 <?php
-header("Content-type: text/html; charset=utf-8");
+
 /*
- * Created on 2013-12-18
- *
- * To change the template for this generated file go to
- * Window - Preferences - PHPeclipse - PHP - Code Templates
+ * PHP100Job v1.0
+ * Programmer : Msn/QQ haowubai@hotmail.com (925939)
+ * www.php100.com Develop a project PHP - MySQL - Apache
+ * Window 2003 - Preferences - PHPeclipse - PHP - Code Templates
  */
-$conn = @ mysql_connect("localhost", "root", "") or die("连接失败");
+
+$conn = @ mysql_connect("localhost", "root", "") or die("数据库链接错误");
 mysql_select_db("bbs", $conn);
-mysql_query("set names 'GBK'"); //ʹ��GBK���ı���;
+mysql_query("set names 'UTF8'"); //使用GBK中文编码;
+
+function htmtocode($content) {
+	$content = str_replace("\n", "<br>", str_replace(" ", "&nbsp;", $content));
+	return $content;
+}
+
+//$content=str_replace("'","‘",$content);
+ //htmlspecialchars();
+
+
+
 ?>
